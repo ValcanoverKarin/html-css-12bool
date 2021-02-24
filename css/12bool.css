@@ -1,0 +1,47 @@
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*DEBUG*/
+.debug .container {
+    background-color:cadetblue;
+    height:200px;
+}
+
+.debug [class*="col-"] {
+    background-color: pink;
+    border: 1px solid black;
+    height: 100%;
+    position: relative;
+}
+
+.debug [class*="col-"] span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/*CONTAINER*/
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*CLASS COL*/
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: calc((100% / 12) * 1);
+}
