@@ -45,3 +45,15 @@
 .col-1 {
     width: calc((100% / 12) * 1);
 }
+
+.col-12 {
+    width: calc((100% / 12) * 12);
+}
+
+.col-8 {
+    width: calc((100% / 12) * 8);
+}
+
+.col-2 {
+    width: calc((100% / 12) * 2);
+}
